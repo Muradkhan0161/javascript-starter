@@ -21,20 +21,20 @@
 // console.log(addOne(1))
 
 
-// js method in the function 
-// const person = {
-//     name : 'Murad',
-//     age : 25,
-//     greet(){
-//         console.log('Hey, My name is ' + this.name )
-//     }
-// };
+//js method in the function 
+const person = {
+    name : 'Murad',
+    age : 25,
+    greet(){
+        console.log('Hey, My name is ' + this.name )
+    }
+};
 
 // person.greet();
 
 
 // array map
-// const hobbies = ['football', 'basketball', 'coding'];
+const hobbies = ['football', 'basketball', 'coding'];
 
 // for( let hobby of hobbies){
 //     console.log(hobby)
@@ -70,8 +70,21 @@
 // const copyPerson = {...person}
 // console.log(copyPerson);
 
-const toArray = (...args) => {
-    return args
+// const toArray = (...args) => {
+//     return args
+// }
+// console.log(toArray(1,2,3,4,5))
+
+
+// destructuring
+const printName = ({name}) => {
+    console.log(name);
 }
-console.log(toArray(1,2,3,4,5))
+printName(person);
+
+const { name, age } = person; //obb
+console.log(name,age);
+
+const [hob1,hob2] = hobbies; //array
+console.log(hob1,hob2);
 
