@@ -49,7 +49,29 @@
 
 
 // Reference types
-const hobbies = ['football', 'basketball', 'coding'];
+// const hobbies = ['football', 'basketball', 'coding'];
 
-hobbies.push('movies');
-console.log(hobbies);
+// hobbies.push('movies');
+// console.log(hobbies);
+
+
+//slice, spread and rest operators
+// const hobbies = ['football', 'basketball', 'coding'];
+
+// const copyHobby = hobbies.slice();
+// console.log(copyHobby);
+
+// const copyHobby = hobbies;
+// console.log(copyHobby);
+
+// const copyHobby = [...hobbies]
+// console.log(copyHobby);
+
+// const copyPerson = {...person}
+// console.log(copyPerson);
+
+const toArray = (...args) => {
+    return args
+}
+console.log(toArray(1,2,3,4,5))
+
