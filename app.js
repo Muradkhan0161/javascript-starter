@@ -34,15 +34,22 @@
 
 
 // array map
-const hobbies = ['football', 'basketball', 'coding'];
+// const hobbies = ['football', 'basketball', 'coding'];
 
 // for( let hobby of hobbies){
 //     console.log(hobby)
 // }
 
 // console.log(hobbies);
-console.log(hobbies.map( hobby => {
-    return ( 'Hobby is ' + hobby )
-}))
+// console.log(hobbies.map( hobby => {
+//     return ( 'Hobby is ' + hobby )
+// }))
 
-console.log(hobbies)
+// console.log(hobbies)
+
+
+// Reference types
+const hobbies = ['football', 'basketball', 'coding'];
+
+hobbies.push('movies');
+console.log(hobbies);
