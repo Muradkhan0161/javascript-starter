@@ -77,14 +77,31 @@ const hobbies = ['football', 'basketball', 'coding'];
 
 
 // destructuring
-const printName = ({name}) => {
-    console.log(name);
+// const printName = ({name}) => {
+//     console.log(name);
+// }
+// printName(person);
+
+// const { name, age } = person; //obb
+// console.log(name,age);
+
+// const [hob1,hob2] = hobbies; //array
+// console.log(hob1,hob2);
+
+
+//async code promises
+const fetchData = callback => {
+    setTimeout(() => {
+        callback('done');
+    }, 1500);
 }
-printName(person);
 
-const { name, age } = person; //obb
-console.log(name,age);
+setTimeout(() => {
+    console.log('You will find peace!')
+    fetchData ( text => {
+        console.log(text)
+    })
+}, 2000);
 
-const [hob1,hob2] = hobbies; //array
-console.log(hob1,hob2);
-
+console.log('hi');
+console.log('hello');
